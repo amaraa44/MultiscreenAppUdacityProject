@@ -24,11 +24,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView numbers;
-    private TextView colors;
-    private TextView family;
-    private TextView phrases;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        numbers = (TextView) findViewById(R.id.numbers);
+        TextView numbers = (TextView) findViewById(R.id.numbers);
         numbers.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        colors = (TextView) findViewById(R.id.colors);
+        TextView colors = (TextView) findViewById(R.id.colors);
         colors.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        family = (TextView) findViewById(R.id.family);
+        TextView family = (TextView) findViewById(R.id.family);
         family.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        phrases = (TextView) findViewById(R.id.phrases);
+        TextView phrases = (TextView) findViewById(R.id.phrases);
         phrases.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
